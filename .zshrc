@@ -1,0 +1,92 @@
+# Need to set this before everything else
+export TERMINAL=alacritty
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOQUIT=false
+
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="kennethreitz"
+HYPHEN_INSENSITIVE="true"
+# ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(gitfast sudo aliases alias-finder docker docker-compose tmux zoxide ruby rails bundler
+	systemd ssh)
+
+source $ZSH/oh-my-zsh.sh
+# This plugin shows all completions as you type (amazing, but heavy)
+# source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# User configuration
+
+# Activate alias-finder plugin
+zstyle ':omz:plugins:alias-finder' autoload yes
+zstyle ':omz:plugins:alias-finder' longer yes
+zstyle ':omz:plugins:alias-finder' exact yes
+zstyle ':omz:plugins:alias-finder' cheaper yes
+
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='nvim'
+else
+  export EDITOR='nvim'
+fi
+
+# To see all aliases neatly grouped: als
+alias zshconf="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+
+export PATH="$PATH:/home/limavfabio/.local/bin"
+
+# Init asdf-vm
+export ASDF_DATA_DIR="/home/limavfabio/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
+
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
+# flyctl export
+export FLYCTL_INSTALL="/home/limavfabio/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/limavfabio/.bun/_bun" ] && source "/home/limavfabio/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+alias pn="pnpm"
+alias pnx="pnpm dlx"
+
+export PNPM_HOME="/home/limavfabio/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# android-sdk home
+export ANDROID_HOME="$HOME/.android-sdk"
+
+# Firebird bin path
+export FB_HOME="/opt/firebird"
+export PATH="$FB_HOME/bin:$PATH"
+
+# UV python autocomplete
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+
+# Function to open cursor detached from current terminal
+cursor() {
+    nohup /usr/bin/cursor "$@" > /dev/null 2>&1 &  # "$@" passes all arguments
+}
