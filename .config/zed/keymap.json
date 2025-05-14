@@ -1,0 +1,30 @@
+[
+  {
+    "bindings": {
+      "ctrl-?": "workspace::ToggleRightDock",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-shift-l": null
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Pane > Editor",
+    "bindings": {
+      "ctrl-shift-d": "editor::SelectAllMatches",
+      "ctrl-enter": "editor::NewlineBelow",
+      "ctrl-shift-enter": "editor::NewlineAbove",
+      "ctrl-k": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-k": "assistant::InlineAssist"
+    }
+  }
+]
