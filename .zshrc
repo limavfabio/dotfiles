@@ -1,5 +1,5 @@
 # Need to set this before everything else
-export TERMINAL=alacritty
+# export TERMINAL=alacritty
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOQUIT=false
 
@@ -17,7 +17,7 @@ plugins=(gitfast sudo aliases alias-finder docker docker-compose tmux zoxide rub
 source $ZSH/oh-my-zsh.sh
 # This plugin shows all completions as you type (amazing, but heavy)
 # source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -44,11 +44,16 @@ fi
 alias zshconf="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
-export PATH="$PATH:/home/limavfabio/.local/bin"
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+
+export PATH="$PATH:$HOME/go/bin"
+
+export PATH="$PATH:$HOME/.local/bin"
 
 # Init asdf-vm
 export ASDF_DATA_DIR="/home/limavfabio/.asdf"
-export PATH="$ASDF_DATA_DIR/shims:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
@@ -78,15 +83,6 @@ esac
 # android-sdk home
 export ANDROID_HOME="$HOME/.android-sdk"
 
-# Firebird bin path
-export FB_HOME="/opt/firebird"
-export PATH="$FB_HOME/bin:$PATH"
-
 # UV python autocomplete
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
-
-# Function to open cursor detached from current terminal
-cursor() {
-    nohup /usr/bin/cursor "$@" > /dev/null 2>&1 &  # "$@" passes all arguments
-}
