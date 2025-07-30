@@ -1,0 +1,14 @@
+[general]
+
+
+
+[window]
+
+startup_mode = "Maximized"
+decorations = "None"
+dynamic_padding = true
+
+[font]
+
+size = 14
+normal = { family = "JetBrainsMono", style = "Regular" }
