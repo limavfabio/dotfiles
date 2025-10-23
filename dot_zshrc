@@ -1,6 +1,6 @@
 # export TERMINAL=alacritty
 # Need to set this before everything else
-export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOSTART=false
 export ZSH_TMUX_AUTOQUIT=false
 
 
@@ -50,11 +50,6 @@ export PATH="$PATH:$HOME/go/bin"
 
 export PATH="$PATH:$HOME/.local/bin"
 
-# Init asdf-vm
-export ASDF_DATA_DIR="/home/limavfabio/.asdf"
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
-
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
@@ -68,9 +63,6 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# android-sdk home
-export ANDROID_HOME="$HOME/.android-sdk"
 
 # UV python autocomplete
 eval "$(uv generate-shell-completion zsh)"
@@ -93,3 +85,15 @@ eval "$(gh copilot alias -- zsh)"
 export GOOGLE_CLOUD_PROJECT="gen-lang-client-0239016192"
 
 eval "$(chezmoi completion zsh)"
+eval "$(mise activate zsh)"
+
+# Android dev tools setup
+export ANDROID_HOME="$HOME/Development/android-sdk"
+export PATH="$PATH:$HOME/Development/android-studio/bin" # Add android-studio bin dir to PATH
+
+export FLUTTER_INSTALL="$HOME/Development/flutter"
+export PATH="$FLUTTER_INSTALL/bin:$PATH"
+
+# Configure vscode shell integration
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+

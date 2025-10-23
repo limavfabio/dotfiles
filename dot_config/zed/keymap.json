@@ -18,13 +18,25 @@
       "ctrl-shift-d": "editor::SelectAllMatches",
       "ctrl-enter": "editor::NewlineBelow",
       "ctrl-shift-enter": "editor::NewlineAbove",
-      "ctrl-k": "assistant::InlineAssist"
+      "ctrl-i": "assistant::InlineAssist"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-k": "assistant::InlineAssist"
+      "ctrl-i": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "(Editor && edit_prediction)",
+    "bindings": {
+      "alt-a": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "(Editor && edit_prediction_conflict)",
+    "bindings": {
+      "alt-a": "editor::AcceptEditPrediction"
     }
   }
 ]
