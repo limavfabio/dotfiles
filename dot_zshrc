@@ -53,10 +53,6 @@ export PATH="$PATH:$HOME/.local/bin"
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
-# flyctl export
-export FLYCTL_INSTALL="/home/limavfabio/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
 # bun completions
 [ -s "/home/limavfabio/.bun/_bun" ] && source "/home/limavfabio/.bun/_bun"
 
@@ -78,9 +74,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-# Config github copilot extension
-eval "$(gh copilot alias -- zsh)"
 
 export GOOGLE_CLOUD_PROJECT="gen-lang-client-0239016192"
 
