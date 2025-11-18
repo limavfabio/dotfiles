@@ -68,6 +68,7 @@ eval "$(uvx --generate-shell-completion zsh)"
 complete -C /usr/bin/syncthing syncthing
 
 # pnpm
+alias p=pnpm
 export PNPM_HOME="/home/limavfabio/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
