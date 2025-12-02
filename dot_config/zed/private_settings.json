@@ -7,14 +7,6 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "context_servers": {
-    "mcp-server-context7": {
-      "enabled": false,
-      "settings": {
-        "context7_api_key": ""
-      }
-    }
-  },
   "agent": {
     "inline_assistant_model": {
       "provider": "copilot_chat",
