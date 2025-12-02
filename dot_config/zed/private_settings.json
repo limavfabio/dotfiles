@@ -7,12 +7,29 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": false,
+      "settings": {
+        "context7_api_key": ""
+      }
+    }
+  },
   "agent": {
-    "use_modifier_to_send": true,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "grok-code-fast-1"
+    },
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5"
+    },
+    "use_modifier_to_send": false,
     "play_sound_when_agent_done": true,
     "always_allow_tool_actions": true
   },
-  "restore_on_startup": "none",
+  "restore_on_startup": "last_session",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "features": {
     "edit_prediction_provider": "copilot"
@@ -73,8 +90,10 @@
     "templ": true,
     "mermaid": true,
     "toml": true,
-    "vue": true,
     "git-firefly": true,
-    "astro": true
+    "make": true,
+    "rainbow-csv": true,
+    "mcp-server-context7": true,
+    "sql": true
   }
 }

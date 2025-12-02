@@ -91,6 +91,12 @@ export PATH="$FLUTTER_INSTALL/bin:$PATH"
 # Configure vscode shell integration
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
+# RIPGREP_CONFIG_PATH since ripgrep doesn't look for a default config file
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+
 # Copilot CLI
 # non-interactive mode
 alias copilot_ni="copilot --enable-all-github-mcp-tools --allow-all-tools --allow-all-paths"
+
+
+
