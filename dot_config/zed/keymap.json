@@ -38,5 +38,11 @@
     "bindings": {
       "alt-a": "editor::AcceptEditPrediction"
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-a": "editor::WrapSelectionsInTag"
+    }
   }
 ]
