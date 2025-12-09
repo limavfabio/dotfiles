@@ -46,8 +46,8 @@ else
 fi
 
 # To see all aliases neatly grouped: als
-alias zshconf="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias zshconf="$EDITOR ~/.zshrc"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
 alias venv='source .venv/bin/activate'
 
