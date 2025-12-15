@@ -1,7 +1,9 @@
 [
   {
     "bindings": {
-      "ctrl-p": "file_finder::Toggle"
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-?": null,
+      "ctrl-shift-l": "workspace::ToggleRightDock"
     }
   },
   {
@@ -41,9 +43,7 @@
     "context": "Editor",
     "bindings": {
       "ctrl-shift-a": "editor::WrapSelectionsInTag",
-      "ctrl-shift-d": "editor::SelectAllMatches",
-      "ctrl-shift-l": "workspace::ToggleRightDock",
-      "ctrl-?": null
+      "ctrl-shift-d": "editor::SelectAllMatches"
     }
   },
   {
