@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp",
+        "--api-key",
+        "ctx7sk-da4ae6ec-072c-452b-8fac-51c23468e485"
+      ]
+    },
+    "tidewave": {
+      "serverUrl": "http://localhost:3000/tidewave/mcp"
+    }
+  }
+}
