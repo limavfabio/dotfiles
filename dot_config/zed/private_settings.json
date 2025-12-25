@@ -10,29 +10,29 @@
   "context_servers": {
     "tidewave-mcp": {
       "settings": {},
-        
+
       "enabled": true,
-      "url": "http://localhost:3000/tidewave/mcp"
-    }
+      "url": "http://localhost:3000/tidewave/mcp",
+    },
   },
   "agent": {
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "grok-code-fast-1"
+      "model": "grok-code-fast-1",
     },
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-haiku-4.5"
+      "model": "claude-haiku-4.5",
     },
     "use_modifier_to_send": false,
     "play_sound_when_agent_done": true,
-    "always_allow_tool_actions": true
+    "always_allow_tool_actions": true,
   },
   "restore_on_startup": "last_session",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "cursor_blink": false,
   "base_keymap": "VSCode",
@@ -43,49 +43,49 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "Ayu Dark",
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
-    }
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
+    },
   },
   "lsp": {
     "ruby-lsp": {
       "settings": {
-        "use_bundler": true
+        "use_bundler": true,
       },
       "initialization_options": {
         "enabledFeatures": {
-          "diagnostics": false
-        }
-      }
+          "diagnostics": false,
+        },
+      },
     },
     "rubocop": {
       "initialization_options": {
-        "safeAutocorrect": false
-      }
+        "safeAutocorrect": false,
+      },
     },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
           "erb": "html",
-          "ruby": "html"
+          "ruby": "html",
         },
         "experimental": {
-          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
-        }
-      }
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
+        },
+      },
     },
     "vscode-css-language-server": {
       "settings": {
         "css": {
           "lint": {
-            "unknownAtRules": "ignore"
-          }
-        }
-      }
-    }
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
+    },
   },
   "auto_install_extensions": {
     "html": true,
@@ -103,6 +103,6 @@
     "make": true,
     "rainbow-csv": true,
     "mcp-server-context7": true,
-    "sql": true
-  }
+    "sql": true,
+  },
 }
