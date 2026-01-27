@@ -1,12 +1,9 @@
 {
   "$schema": "https://charm.land/crush.json",
   "lsp": {
-    "go": {
-      "command": "gopls"
-    },
-    "ruby": {
-      "command": "ruby-lsp"
-    }
+    "go": { "command": "gopls" },
+    "ruby": { "command": "ruby-lsp" },
+    "typescript": { "command": "typescript-language-server" }
   },
   "mcp": {
     "context7": {
