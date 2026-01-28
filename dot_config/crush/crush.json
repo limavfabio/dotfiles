@@ -1,5 +1,8 @@
 {
   "$schema": "https://charm.land/crush.json",
+  "permissions": {
+    "allowed_tools": ["view", "ls", "grep", "edit", "notify-send"]
+  },
   "lsp": {
     "go": { "command": "gopls" },
     "ruby": { "command": "ruby-lsp" },
