@@ -33,11 +33,49 @@
     },
   },
   "agent": {
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "tools": {
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": false,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "subagent": true,
+          "thinking": true,
+          "web_search": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {
+          "tidewave-mcp": {
+            "tools": {
+              "project_eval": false,
+              "get_source_location": true,
+              "get_models": true,
+              "get_logs": true,
+              "get_docs": true,
+              "execute_sql_query": false
+            }
+          },
+          "mcp-server-context7": {
+            "tools": {
+              "resolve-library-id": true,
+              "query-docs": true
+            }
+          }
+        }
+      }
+    },
     "inline_assistant_model": {
       "provider": "ZAI",
       "model": "GLM-4.7",
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "provider": "ZAI",
       "model": "GLM-4.7",
