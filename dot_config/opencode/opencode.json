@@ -8,11 +8,6 @@
       "headers": {
         "CONTEXT7_API_KEY": "{env:CONTEXT7_API_KEY}"
       }
-    },
-    "tidewave": {
-      "type": "remote",
-      "url": "http://localhost:3000/tidewave/mcp",
-      "enabled": true
     }
   },
   "$schema": "https://opencode.ai/config.json"
