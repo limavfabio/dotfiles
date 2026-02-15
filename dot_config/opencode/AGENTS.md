@@ -17,3 +17,9 @@ You must strictly adhere to these rules to prevent "fix-on-fix" death spirals an
 
 - **STRICT EPISTEMOLOGY (NO GUESSING):** You are strictly forbidden from presuming or hallucinating APIs, function signatures, or configuration schemas for libraries. You MUST use the `context7` tool to look up current documentation before writing the implementation. Assumptions are technical debt.
 - **THE CIRCUIT BREAKER (ANTI-SLOP):** Identify the Death Spiral. If a straightforward task (like Auth or CRUD) fails and requires more than two "fix-on-fix" iterations, or results in a cascade of new debug files, **STOP DIGGING**. You must acknowledge the complexity bloat, discard the current approach, revert the state, and rethink using the official documentation. No sunk cost fallacies.
+- **PROCESS SOVEREIGNTY (LEAVE THE DAEMONS TO THE HOST):**
+To prevent orphaned processes and log fragmentation, you are strictly prohibited from starting long-running server processes (bin/dev, rails server, sidekiq, tailwind --watch, etc.) within your internal terminal.
+Host-Centric Runtime: Assume the developer is already running the application environment. Your changes should be picked up by the existing hot-reloading or autoloader mechanism.
+Explicit Instructions Only: If a change requires a server restart (e.g., modifying config/initializers, Gemfile, or config/application.rb), you must explicitly instruct the user to restart their local server.
+Transient Execution: Your use of the terminal is restricted to ephemeral, "run-and-exit" commands: bin/rails runner, rake tasks, rspec executions, or curl for API verification.
+The Exception: You may only start a server process if specifically requested for a one-off diagnostic, and you must ensure the process is terminated before concluding the turn.
