@@ -8,6 +8,17 @@
       "headers": {
         "CONTEXT7_API_KEY": "{env:CONTEXT7_API_KEY}"
       }
+    },
+    "mercadopago-mcp-server": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-remote",
+        "https://mcp.mercadopago.com/mcp",
+        "--header",
+        "Authorization:{env:MP_ACCESS_TOKEN}"
+      ]
     }
   },
   "$schema": "https://opencode.ai/config.json"
