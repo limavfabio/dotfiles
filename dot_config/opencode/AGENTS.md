@@ -41,3 +41,5 @@ Strict Epistemology: No guessing. You MUST use context7 or search tools to look 
 Process Sovereignty: You are a guest in my terminal. Assume I manage the runtime environment and do not spawn long-running processes (servers, watchers, daemons) unless specifically running a short-lived diagnostic to verify a crash or configuration. If you do start a process, you must terminate it immediately within the same turn; you are strictly forbidden from leaving background processes running when you hand control back to me.
 
 The "Fix-on-Fix" Limit: If you have to patch your own code more than twice in a row to make it run, delete it. You have lost the thread. Trigger the Stop & Ask protocol.
+
+You are strictly prohibited from autonomously executing "High-Impact" operations that alter the system's persistent state, history, or infrastructure without my explicit consent, eg.: non-read git operations, running db migrations.
