@@ -1,5 +1,4 @@
 {
-  "plugin": ["opencode-antigravity-auth@latest"],
   "mcp": {
     "context7": {
       "type": "remote",
