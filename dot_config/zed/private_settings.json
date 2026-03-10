@@ -1,4 +1,5 @@
 {
+  "diff_view_style": "unified",
   "edit_predictions": {
     "provider": "zed",
   },
@@ -33,6 +34,9 @@
     },
   },
   "agent": {
+    "tool_permissions": {
+      "default": "allow"
+    },
     "profiles": {
       "ask": {
         "name": "Ask",
@@ -82,7 +86,6 @@
     },
     "use_modifier_to_send": false,
     "play_sound_when_agent_done": true,
-    "always_allow_tool_actions": true,
   },
   "restore_on_startup": "last_session",
   "icon_theme": "Colored Zed Icons Theme Dark",
