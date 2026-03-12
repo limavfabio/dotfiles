@@ -104,3 +104,6 @@ export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
 # Copilot CLI
 # non-interactive mode
 alias copilot_ni="copilot --enable-all-github-mcp-tools --allow-all-tools --allow-all-paths"
+
+# Set OpenAI Codex home
+export CODEX_HOME="$HOME/.config/codex"
