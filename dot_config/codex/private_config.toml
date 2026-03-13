@@ -1,6 +1,9 @@
-model = "gpt-5.4"
+model = "gpt-5.2-codex"
 model_reasoning_effort = "medium"
 [projects."/home/limavfabio/Documents/repos/varejo_rails"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/emprego-facil"]
 trust_level = "trusted"
 
 [notice]
@@ -12,3 +15,8 @@ hide_full_access_warning = true
 [features]
 js_repl = true
 prevent_idle_sleep = true
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp"]
+env_vars = ["CONTEXT7_API_KEY"]
