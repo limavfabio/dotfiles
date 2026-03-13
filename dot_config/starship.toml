@@ -1,3 +1,6 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 add_newline = false
 format = """
 $directory\
@@ -16,7 +19,7 @@ style = "blue bold"
 truncation_length = 3
 
 [character]
-success_symbol = "[❯](green bold)" 
+success_symbol = "[❯](green bold)"
 error_symbol = "[×](red bold)"
 
 [git_branch]
