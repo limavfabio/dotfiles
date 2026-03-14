@@ -46,7 +46,6 @@ if status is-interactive
 end
 
 ### 4. LOCAL OVERRIDES
-# Equivalent to your ~/.zshrc.local check
 if test -f ~/.config/fish/config.local.fish
     source ~/.config/fish/config.local.fish
 end
