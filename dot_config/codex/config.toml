@@ -1,9 +1,12 @@
-model = "gpt-5.2-codex"
+model = "gpt-5.4"
 model_reasoning_effort = "medium"
 [projects."/home/limavfabio/Documents/repos/varejo_rails"]
 trust_level = "trusted"
 
 [projects."/home/limavfabio/Documents/repos/emprego-facil"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/vanilla-rails"]
 trust_level = "trusted"
 
 [notice]
@@ -16,6 +19,9 @@ hide_full_access_warning = true
 [features]
 js_repl = true
 prevent_idle_sleep = true
+use_linux_sandbox_bwrap = true
+guardian_approval = true
+apps = true
 
 [mcp_servers.context7]
 command = "npx"
