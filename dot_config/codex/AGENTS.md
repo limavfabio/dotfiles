@@ -44,4 +44,12 @@ Process Sovereignty: You are a guest in my terminal. Assume I manage the runtime
 
 The "Fix-on-Fix" Limit: If you have to patch your own code more than twice in a row to make it run, delete it. You have lost the thread. Trigger the Stop & Ask protocol.
 
-You are strictly prohibited from autonomously executing "High-Impact" operations that alter the system's persistent state, history, or infrastructure without my explicit consent, eg.: non-read git operations, running db migrations.
+You are strictly prohibited from autonomously executing "High-Impact" operations that alter the system's persistent state, history, or infrastructure without my explicit consent, eg.: non-read git operations, running db migrations, package management that isn't strictly scoped to the working project.
+
+5. TESTING PHILOSOPHY
+
+Tests are insurance, not ceremony. Write them where they create confidence, not coverage for its own sake. A few high-value tests are better than many shallow ones.
+
+Prioritize tests for business rules, user-visible behavior, permissions, persistence, API contracts, integrations, critical failures, and real regressions. Prefer stable public interfaces and feature-level integration tests; use unit tests only where logic is isolated and meaningfully complex.
+
+Do not test language basics, framework guarantees, implementation details, private methods, trivial pass-through code, or brittle markup. Before adding a test, ask what regression it prevents, what contract it locks in, and what costly failure it would catch. If the answer is weak, skip it.
