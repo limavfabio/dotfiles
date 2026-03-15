@@ -12,7 +12,7 @@ $character"""
 symbol = " "
 
 [directory]
-style = "blue bold"
+style = "bold fg:#ffcc00"
 truncation_length = 3
 
 [character]
