@@ -15,6 +15,11 @@ if status is-interactive
     abbr -a tksv "tmux kill-server"
     abbr -a tkss "tmux kill-session -t"
 
+    abbr -a rdd "bin/rails db:drop"
+    abbr -a rdc "bin/rails db:create"
+    abbr -a rdm "bin/rails db:migrate"
+    abbr -a rds "bin/rails db:seed"
+    abbr -a rdsr "bin/rails db:seed:replant"
     abbr -a rt "bin/rails test"
     abbr -a rc "bin/rails console"
 end
