@@ -19,6 +19,10 @@
         "Authorization:{env:MP_ACCESS_TOKEN}"
       ]
     },
+    "playwright-mcp-server": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest"]
+    },
     "zai-mcp-server": {
       "type": "local",
       "command": ["npx", "-y", "@z_ai/mcp-server"],
