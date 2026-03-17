@@ -17,6 +17,7 @@ if status is-interactive
 
     abbr -a bi "bundle install"
     abbr -a bu "bundle update --all"
+    abbr -a be "bundle exec"
 
     abbr -a rdd "bin/rails db:drop"
     abbr -a rdc "bin/rails db:create"
