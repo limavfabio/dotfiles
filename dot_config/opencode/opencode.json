@@ -23,7 +23,7 @@
       "type": "local",
       "command": ["npx", "-y", "@playwright/mcp@latest", "--extension"],
       "environment": {
-        "PLAYWRIGHT_MCP_EXTENSION_TOKEN": "5KZp4d_rzAybNImleq0GcY9BgGHisZHbANnH-vKLqFU"
+        "PLAYWRIGHT_MCP_EXTENSION_TOKEN": "{env:PLAYWRIGHT_MCP_EXTENSION_TOKEN}"
       }
     },
     "zai-mcp-server": {

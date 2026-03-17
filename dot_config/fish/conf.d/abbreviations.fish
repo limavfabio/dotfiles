@@ -15,6 +15,9 @@ if status is-interactive
     abbr -a tksv "tmux kill-server"
     abbr -a tkss "tmux kill-session -t"
 
+    abbr -a bi "bundle install"
+    abbr -a bu "bundle update --all"
+
     abbr -a rdd "bin/rails db:drop"
     abbr -a rdc "bin/rails db:create"
     abbr -a rdm "bin/rails db:migrate"
