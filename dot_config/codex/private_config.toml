@@ -1,7 +1,8 @@
-model = "gpt-5.4"
+model = "gpt-5.4-mini"
 model_reasoning_effort = "medium"
+approvals_reviewer = "guardian_subagent"
 
-[projects."/home/limavfabio/Documents/repos/*"]
+[projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
 
 [notice]
@@ -22,3 +23,7 @@ apps = true
 command = "npx"
 args = ["-y", "@upstash/context7-mcp"]
 env_vars = ["CONTEXT7_API_KEY"]
+
+[mcp_servers.chrome-devtools]
+command = "npx"
+args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
