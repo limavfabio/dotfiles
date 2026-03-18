@@ -1,7 +1,7 @@
 model = "gpt-5.4"
 model_reasoning_effort = "medium"
 
-[projects."/home/limavfabio/Documents/repos"]
+[projects."/home/limavfabio/Documents/repos/*"]
 trust_level = "trusted"
 
 [notice]
