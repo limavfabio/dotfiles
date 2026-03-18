@@ -1,12 +1,7 @@
 model = "gpt-5.4"
 model_reasoning_effort = "medium"
-[projects."/home/limavfabio/Documents/repos/varejo_rails"]
-trust_level = "trusted"
 
-[projects."/home/limavfabio/Documents/repos/emprego-facil"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/vanilla-rails"]
+[projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
 
 [notice]
