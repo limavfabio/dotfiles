@@ -1,6 +1,6 @@
 model = "gpt-5.4-mini"
 model_reasoning_effort = "medium"
-approvals_reviewer = "guardian_subagent"
+approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
