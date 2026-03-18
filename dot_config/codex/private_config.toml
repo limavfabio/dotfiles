@@ -5,6 +5,9 @@ approvals_reviewer = "guardian_subagent"
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
 
+[projects."/home/limavfabio/Documents/repos/varejo_rails"]
+trust_level = "trusted"
+
 [notice]
 hide_full_access_warning = true
 
