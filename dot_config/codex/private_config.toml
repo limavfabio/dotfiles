@@ -22,8 +22,3 @@ apps = true
 command = "npx"
 args = ["-y", "@upstash/context7-mcp"]
 env_vars = ["CONTEXT7_API_KEY"]
-
-[mcp_servers.playwright]
-command = "npx"
-args = ["-y", "@playwright/mcp@latest", "--extension"]
-env_vars = ["PLAYWRIGHT_MCP_EXTENSION_TOKEN"]

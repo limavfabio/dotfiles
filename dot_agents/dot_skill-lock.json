@@ -1,0 +1,65 @@
+{
+  "version": 3,
+  "skills": {
+    "context7": {
+      "source": "intellectronica/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/intellectronica/agent-skills.git",
+      "skillPath": "skills/context7/SKILL.md",
+      "skillFolderHash": "c7ab574e006997d98e8a2d8fb7a1db0d2477b180",
+      "installedAt": "2026-01-27T01:16:39.275Z",
+      "updatedAt": "2026-01-27T01:16:39.275Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-01-27T01:16:46.427Z",
+      "updatedAt": "2026-01-27T01:16:46.427Z"
+    },
+    "karpathy-guidelines": {
+      "source": "forrestchang/andrej-karpathy-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/forrestchang/andrej-karpathy-skills.git",
+      "skillPath": "skills/karpathy-guidelines/SKILL.md",
+      "skillFolderHash": "e119339197d600aa39a24fd7a95c946800c9c949",
+      "installedAt": "2026-01-31T19:17:17.189Z",
+      "updatedAt": "2026-01-31T19:17:17.189Z"
+    },
+    "remotion-best-practices": {
+      "source": "remotion-dev/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/remotion-dev/skills.git",
+      "skillPath": "skills/remotion/SKILL.md",
+      "skillFolderHash": "666980630dc910c6b623f3bab13280af47d6995e",
+      "installedAt": "2026-03-18T11:50:49.286Z",
+      "updatedAt": "2026-03-18T11:50:49.286Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "d22b7962fb118a40f0e2e27af2fdeab12f2651a8",
+      "pluginName": "agent-browser",
+      "installedAt": "2026-03-18T12:12:10.290Z",
+      "updatedAt": "2026-03-18T12:12:10.290Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp"
+  ]
+}
