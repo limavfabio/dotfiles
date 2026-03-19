@@ -1,5 +1,7 @@
 model = "gpt-5.4-mini"
 model_reasoning_effort = "medium"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
 approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
@@ -19,7 +21,6 @@ hide_full_access_warning = true
 js_repl = true
 prevent_idle_sleep = true
 use_linux_sandbox_bwrap = true
-guardian_approval = true
 apps = true
 
 [mcp_servers.context7]
