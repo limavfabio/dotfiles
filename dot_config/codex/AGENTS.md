@@ -53,3 +53,79 @@ Tests are insurance, not ceremony. Write them where they create confidence, not 
 Prioritize tests for business rules, user-visible behavior, permissions, persistence, API contracts, integrations, critical failures, and real regressions. Prefer stable public interfaces and feature-level integration tests; use unit tests only where logic is isolated and meaningfully complex.
 
 Do not test language basics, framework guarantees, implementation details, private methods, trivial pass-through code, or brittle markup. Before adding a test, ask what regression it prevents, what contract it locks in, and what costly failure it would catch. If the answer is weak, skip it.
+
+6. PROTOCOL: REFACTORING FOR ELEGANCE
+
+Refactoring is the phase where we improve the code's shape without changing the feature's intended behavior. The goal is not novelty, cleverness, or pattern-matching to "clean architecture." The goal is to reduce friction, reduce duplication, and make the code feel more obvious, more local, and more in harmony with the framework.
+
+Refactoring principles:
+- Prefer removing code over adding code.
+- Prefer consolidation over indirection.
+- Prefer explicit, local code over reusable but premature abstractions.
+- Prefer the framework's default shape over custom architecture.
+- Prefer one clear source of truth over scattered partial implementations.
+- Prefer backtracking and simplification over piling new layers on a tangled system.
+
+When refactoring, assume the existing code is guilty until proven innocent. Do not preserve structure out of politeness. Identify what is accidental complexity and remove it.
+
+Refactoring workflow:
+1. Map the feature end-to-end before changing structure.
+2. Identify the true source of truth, the entrypoints, and the side effects.
+3. Identify duplication, split responsibilities, dead paths, and competing implementations.
+4. Collapse the feature toward a smaller number of obvious moving parts.
+5. Only then rewrite or relocate code.
+
+Mandatory refactoring behavior:
+- Do not introduce new abstractions unless they remove more complexity than they add.
+- Do not create services, helpers, hooks, presenters, managers, adapters, or utilities by default.
+- Do not preserve multiple implementations of the same behavior for the sake of "safety." Unify them.
+- Do not add another patch on top of a confused design. First ask whether the design should be simplified or partially rewritten.
+- If the current structure is fighting the refactor, prefer a careful rewrite of the affected slice over incremental band-aids.
+- If a concern belongs naturally to a model, keep it in the model. If it belongs in the controller, keep it in the controller. If it belongs in the component, keep it in the component. Respect the framework's natural boundaries.
+- Favor deleting obsolete paths early once the replacement is clear.
+
+Refactoring decision rule:
+For every proposed change, ask:
+- Does this reduce the number of concepts?
+- Does this reduce the number of files or coordination points?
+- Does this make behavior easier to trace?
+- Does this move the code closer to the framework's default conventions?
+- Would a new developer understand the flow faster after this change?
+
+If the answer is no, the refactor is probably wrong.
+
+Required output before refactoring:
+Before making changes, provide:
+1. A brief map of the current flow
+2. Where the feature is fragmented or duplicated
+3. The simplest target design
+4. What will be removed, merged, or relocated
+5. Why this is more elegant and more conventional
+
+Refactoring constraints:
+- Preserve behavior unless I explicitly approve behavioral changes.
+- Minimize the number of moving pieces.
+- Optimize for readability, traceability, and total cost of ownership.
+- Choose boring names.
+- Avoid speculative cleanup unrelated to the feature.
+- Do not widen the scope of the refactor without stating it explicitly.
+
+Definition of elegance:
+Elegant code is not abstract, smart, or pattern-heavy. Elegant code is code that feels inevitable in hindsight. It is easy to trace, sits in the expected place, and solves the problem with the fewest surprising decisions.
+
+When stuck:
+Do not respond to tangled code by introducing more structure.
+Instead:
+1. Step back
+2. Re-evaluate the feature boundaries
+3. Identify the canonical flow
+4. Remove competing paths
+5. Rebuild the smallest coherent version
+
+Refactoring success criteria:
+- Fewer places to look
+- Fewer competing implementations
+- Clearer ownership of behavior
+- Less indirection
+- Stronger alignment with official framework conventions
+- The resulting code feels more obvious than the code it replaced
