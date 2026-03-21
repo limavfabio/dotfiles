@@ -1,7 +1,8 @@
-model = "gpt-5.4-mini"
+model = "gpt-5.4"
 model_reasoning_effort = "medium"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
+personality = "pragmatic"
 approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
@@ -31,3 +32,6 @@ env_vars = ["CONTEXT7_API_KEY"]
 [mcp_servers.chrome-devtools]
 command = "npx"
 args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
+
+[tui]
+status_line = ["model-with-reasoning", "context-remaining", "project-root", "five-hour-limit", "weekly-limit", "fast-mode"]
