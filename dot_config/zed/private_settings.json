@@ -1,41 +1,24 @@
 {
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+  },
   "diff_view_style": "unified",
   "edit_predictions": {
-    "provider": "zed"
-  },
-  "language_models": {
-    "openai_compatible": {
-      "ZAI": {
-        "api_url": "https://api.z.ai/api/coding/paas/v4",
-        "available_models": [
-          {
-            "name": "GLM-4.7",
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000,
-            "capabilities": {
-              "tools": true,
-              "images": false,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
-              "chat_completions": true
-            }
-          }
-        ]
-      }
-    }
+    "provider": "zed",
   },
   "context_servers": {
     "tidewave-mcp": {
       "settings": {},
 
       "enabled": true,
-      "url": "http://localhost:3000/tidewave/mcp"
-    }
+      "url": "http://localhost:3000/tidewave/mcp",
+    },
   },
   "agent": {
     "tool_permissions": {
-      "default": "allow"
+      "default": "allow",
     },
     "profiles": {
       "ask": {
@@ -52,7 +35,7 @@
           "grep": true,
           "subagent": true,
           "thinking": true,
-          "web_search": true
+          "web_search": true,
         },
         "enable_all_context_servers": false,
         "context_servers": {
@@ -63,29 +46,29 @@
               "get_models": true,
               "get_logs": true,
               "get_docs": true,
-              "execute_sql_query": false
-            }
+              "execute_sql_query": false,
+            },
           },
           "mcp-server-context7": {
             "tools": {
               "resolve-library-id": true,
-              "query-docs": true
-            }
-          }
-        }
-      }
+              "query-docs": true,
+            },
+          },
+        },
+      },
     },
     "inline_assistant_model": {
       "provider": "ZAI",
-      "model": "GLM-4.7"
+      "model": "GLM-4.7",
     },
     "default_profile": "write",
     "default_model": {
       "provider": "ZAI",
-      "model": "GLM-4.7"
+      "model": "GLM-4.7",
     },
     "use_modifier_to_send": false,
-    "play_sound_when_agent_done": true
+    "play_sound_when_agent_done": true,
   },
   "restore_on_startup": "last_session",
   "icon_theme": "Colored Zed Icons Theme Dark",
@@ -98,76 +81,76 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "Ayu Dark",
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
     },
     "JavaScript": {
       "formatter": {
         "external": {
           "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TypeScript": {
       "formatter": {
         "external": {
           "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TSX": {
       "formatter": {
         "external": {
           "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
       },
-      "format_on_save": "on"
-    }
+      "format_on_save": "on",
+    },
   },
   "lsp": {
     "ruby-lsp": {
       "settings": {
-        "use_bundler": true
+        "use_bundler": true,
       },
       "initialization_options": {
         "enabledFeatures": {
-          "diagnostics": false
-        }
-      }
+          "diagnostics": false,
+        },
+      },
     },
     "rubocop": {
       "initialization_options": {
-        "safeAutocorrect": false
-      }
+        "safeAutocorrect": false,
+      },
     },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
           "erb": "html",
-          "ruby": "html"
+          "ruby": "html",
         },
         "experimental": {
-          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
-        }
-      }
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
+        },
+      },
     },
     "vscode-css-language-server": {
       "settings": {
         "css": {
           "lint": {
-            "unknownAtRules": "ignore"
-          }
-        }
-      }
-    }
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
+    },
   },
   "auto_install_extensions": {
     "html": true,
@@ -185,6 +168,6 @@
     "make": true,
     "rainbow-csv": true,
     "mcp-server-context7": true,
-    "sql": true
-  }
+    "sql": true,
+  },
 }

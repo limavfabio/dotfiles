@@ -1,8 +1,9 @@
-model = "gpt-5.4"
-model_reasoning_effort = "medium"
+model = "gpt-5.4-mini"
+model_reasoning_effort = "high"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
+plan_mode_reasoning_effort = "high"
 
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
