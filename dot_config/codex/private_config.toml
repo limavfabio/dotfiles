@@ -3,7 +3,6 @@ model_reasoning_effort = "medium"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
-approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
@@ -35,3 +34,5 @@ args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
 
 [tui]
 status_line = ["model-with-reasoning", "context-remaining", "project-root", "five-hour-limit", "weekly-limit", "fast-mode"]
+notifications = true
+notification_method = "auto"
