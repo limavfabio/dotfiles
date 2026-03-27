@@ -8,9 +8,7 @@ if status is-interactive
     abbr -a be      'bundle exec'
     abbr -a copilot_ni "copilot --enable-all-github-mcp-tools --allow-all-tools --allow-all-paths"
 
-    abbr -a ta "tmux attach -t"
     abbr -a tad "tmux attach -d -t"
-    abbr -a ts "tmux new-session -s"
     abbr -a tl "tmux list-sessions"
     abbr -a tksv "tmux kill-server"
     abbr -a tkss "tmux kill-session -t"
@@ -26,4 +24,20 @@ if status is-interactive
     abbr -a rdsr "bin/rails db:seed:replant"
     abbr -a rt "bin/rails test"
     abbr -a rc "bin/rails console"
+end
+
+function ta --description "Attach tmux, optionally targeting a named session"
+    if test (count $argv) -gt 0
+        tmux attach -t $argv
+    else
+        tmux attach
+    end
+end
+
+function ts --description "Start tmux, optionally with a named session"
+    if test (count $argv) -gt 0
+        tmux new-session -s $argv
+    else
+        tmux new-session
+    end
 end
