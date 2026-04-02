@@ -1,14 +1,21 @@
 model = "gpt-5.4-mini"
-model_reasoning_effort = "high"
+model_reasoning_effort = "medium"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
+approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
 
 [projects."/home/limavfabio/Documents/repos/varejo_rails"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Downloads/Rei do Assado"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio"]
 trust_level = "trusted"
 
 [notice]
