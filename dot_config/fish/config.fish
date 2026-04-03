@@ -8,10 +8,6 @@ set -gx GOOGLE_CLOUD_PROJECT "gen-lang-client-0239016192"
 set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
 set -gx CODEX_HOME "$HOME/.config/codex"
 
-# Android & Flutter
-set -gx ANDROID_HOME "$HOME/Development/android-sdk"
-set -gx FLUTTER_INSTALL "$HOME/Development/flutter"
-
 # Bun & pnpm
 set -gx BUN_INSTALL "$HOME/.bun"
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
@@ -22,9 +18,8 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $BUN_INSTALL/bin
 fish_add_path $PNPM_HOME
-fish_add_path $ANDROID_HOME/platform-tools # Recommended for Android dev
-fish_add_path "$HOME/Development/android-studio/bin"
-fish_add_path $FLUTTER_INSTALL/bin
+fish_add_path "$HOME/Android/Sdk/platform-tools/" # Recommended for Android dev
+fish_add_path "$HOME/.local/android-studio/bin"
 
 ### 3. INTERACTIVE SESSIONS
 if status is-interactive
