@@ -4,7 +4,6 @@ set -g fish_greeting ""
 # Fish handles these natively; 'set -gx' is the equivalent of 'export'
 set -gx TERMINAL alacritty
 set -gx EDITOR nvim
-set -gx GOOGLE_CLOUD_PROJECT "gen-lang-client-0239016192"
 set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
 set -gx CODEX_HOME "$HOME/.config/codex"
 
