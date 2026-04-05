@@ -6,6 +6,10 @@ set -gx TERMINAL alacritty
 set -gx EDITOR nvim
 set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
 set -gx CODEX_HOME "$HOME/.config/codex"
+set -gx ANDROID_HOME "$HOME/Android/Sdk"
+if test -d "$HOME/.local/android-studio/jbr"
+    set -gx JAVA_HOME "$HOME/.local/android-studio/jbr"
+end
 
 # Bun & pnpm
 set -gx BUN_INSTALL "$HOME/.bun"
