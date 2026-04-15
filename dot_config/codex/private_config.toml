@@ -1,5 +1,5 @@
-model = "gpt-5.4-mini"
-model_reasoning_effort = "medium"
+model = "gpt-5.4"
+model_reasoning_effort = "high"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
@@ -24,6 +24,9 @@ trust_level = "trusted"
 [projects."/home/limavfabio/Documents/repos/emprego-facil-expo"]
 trust_level = "trusted"
 
+[projects."/home/limavfabio/Documents/repos/norte-brasil-digital"]
+trust_level = "trusted"
+
 [notice]
 hide_full_access_warning = true
 
@@ -45,6 +48,9 @@ env_vars = ["CONTEXT7_API_KEY"]
 [mcp_servers.chrome-devtools]
 command = "npx"
 args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
+
+[mcp_servers.chrome-devtools.tools.new_page]
+approval_mode = "approve"
 
 [tui]
 status_line = ["model-with-reasoning", "context-remaining", "project-root", "five-hour-limit", "weekly-limit", "fast-mode"]

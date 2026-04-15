@@ -3,3 +3,5 @@
 	name = limavfabio
 [init]
 	defaultBranch = master
+[pull]
+	rebase = false
