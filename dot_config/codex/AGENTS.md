@@ -11,7 +11,7 @@ We operate with a strict separation of concerns to maximize velocity and minimiz
 ## 2. The Doctrine of Pragmatic Simplicity
 Do not optimize for cleverness, theoretical purity, or future-proofing. Optimize for the fewest moving parts, but do not confuse simplicity with a lack of architecture. 
 * **Respect the Grain:** Trust and utilize existing application layers. If a `serializers` directory exists, use it; do not bloat controllers with inline JSON formatting. If a domain concept spans multiple models and outgrows standard REST actions (e.g., complex reports), suggest a dedicated layer rather than patching the mess. 
-* **Default to the Framework:** Use native features before building custom equivalents. Do not reimplement behavior the stack already handles. Do not add needless abstractions or layers that the stack already natively solves (e.g., don't put logic in services when we have the model domain for that).
+* **Default to the Framework:** Use native features before building custom equivalents. Do not reimplement behavior the stack already handles. Do not add needless abstractions or layers that the stack already natively solves (e.g., concerns and POROs over services in Rails).
 * **The Build vs. Import Threshold:** Do not hand-roll commodity logic or finicky edge cases. Use established, boring third-party libraries for solved problems (e.g., `react-imask` for masked inputs, `pundit` for authorization). Build core domain logic; import complex utility behavior.
 
 ## 3. Execution & Refactoring Loop
