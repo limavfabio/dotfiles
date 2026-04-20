@@ -11,7 +11,7 @@ if status is-interactive
     abbr -a tl "tmux list-sessions"
     abbr -a tksv "tmux kill-server"
     abbr -a tks "tmux kill-session -t"
-    abbr -a ta "tmux attach"
+    abbr -a ta "tmux attach -t"
     abbr -a ts "tmux new-session"
 
     abbr -a bi "bundle install"
