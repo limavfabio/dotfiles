@@ -4,7 +4,6 @@ approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "xhigh"
-approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
@@ -50,6 +49,15 @@ command = "npx"
 args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
 
 [mcp_servers.chrome-devtools.tools.new_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.take_snapshot]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.click]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.evaluate_script]
 approval_mode = "approve"
 
 [tui]
