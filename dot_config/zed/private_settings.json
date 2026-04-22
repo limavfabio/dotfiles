@@ -1,74 +1,64 @@
 {
-  "agent_servers": {
-    "codex-acp": {
-      "type": "registry",
-    },
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "right"
   },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "right"
+  },
+  "agent_servers": {},
   "diff_view_style": "unified",
   "edit_predictions": {
-    "provider": "zed",
+    "provider": "zed"
   },
   "context_servers": {
-    "tidewave-mcp": {
-      "settings": {},
-
+    "mcp-server-context7": {
       "enabled": true,
-      "url": "http://localhost:3000/tidewave/mcp",
-    },
+      "remote": false,
+      "settings": {
+        "context7_api_key": ""
+      }
+    }
   },
   "agent": {
-    "tool_permissions": {
-      "default": "allow",
-    },
-    "profiles": {
-      "ask": {
-        "name": "Ask",
-        "tools": {
-          "diagnostics": true,
-          "fetch": true,
-          "list_directory": true,
-          "project_notifications": false,
-          "now": true,
-          "find_path": true,
-          "read_file": true,
-          "open": true,
-          "grep": true,
-          "subagent": true,
-          "thinking": true,
-          "web_search": true,
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {
-          "tidewave-mcp": {
-            "tools": {
-              "project_eval": false,
-              "get_source_location": true,
-              "get_models": true,
-              "get_logs": true,
-              "get_docs": true,
-              "execute_sql_query": false,
-            },
-          },
-          "mcp-server-context7": {
-            "tools": {
-              "resolve-library-id": true,
-              "query-docs": true,
-            },
-          },
-        },
+    "favorite_models": [
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.4",
+        "enable_thinking": true,
+        "effort": "xhigh"
       },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.4-mini",
+        "enable_thinking": true,
+        "effort": "high"
+      }
+    ],
+    "dock": "left",
+    "tool_permissions": {
+      "default": "allow"
     },
+    "profiles": {},
     "inline_assistant_model": {
-      "provider": "ZAI",
-      "model": "GLM-4.7",
+      "provider": "copilot_chat",
+      "model": "gpt-5.4-mini"
     },
     "default_profile": "write",
     "default_model": {
-      "provider": "ZAI",
-      "model": "GLM-4.7",
+      "effort": "high",
+      "provider": "copilot_chat",
+      "model": "gpt-5.4"
     },
     "use_modifier_to_send": false,
-    "play_sound_when_agent_done": true,
+    "play_sound_when_agent_done": "always"
   },
   "restore_on_startup": "last_session",
   "icon_theme": "Colored Zed Icons Theme Dark",
@@ -81,76 +71,49 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark",
+    "dark": "Ayu Dark"
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
-    },
-    "JavaScript": {
-      "formatter": {
-        "external": {
-          "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "{buffer_path}"],
-        },
-      },
-      "format_on_save": "on",
-    },
-    "TypeScript": {
-      "formatter": {
-        "external": {
-          "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "{buffer_path}"],
-        },
-      },
-      "format_on_save": "on",
-    },
-    "TSX": {
-      "formatter": {
-        "external": {
-          "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "{buffer_path}"],
-        },
-      },
-      "format_on_save": "on",
-    },
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+    }
   },
   "lsp": {
     "ruby-lsp": {
       "settings": {
-        "use_bundler": true,
+        "use_bundler": true
       },
       "initialization_options": {
         "enabledFeatures": {
-          "diagnostics": false,
-        },
-      },
+          "diagnostics": false
+        }
+      }
     },
     "rubocop": {
       "initialization_options": {
-        "safeAutocorrect": false,
-      },
+        "safeAutocorrect": true
+      }
     },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
           "erb": "html",
-          "ruby": "html",
+          "ruby": "html"
         },
         "experimental": {
-          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
-        },
-      },
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
+        }
+      }
     },
     "vscode-css-language-server": {
       "settings": {
         "css": {
           "lint": {
-            "unknownAtRules": "ignore",
-          },
-        },
-      },
-    },
+            "unknownAtRules": "ignore"
+          }
+        }
+      }
+    }
   },
   "auto_install_extensions": {
     "html": true,
@@ -168,6 +131,6 @@
     "make": true,
     "rainbow-csv": true,
     "mcp-server-context7": true,
-    "sql": true,
-  },
+    "sql": true
+  }
 }
