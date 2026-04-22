@@ -33,11 +33,17 @@
         "provider": "copilot_chat",
         "model": "gpt-5.4",
         "enable_thinking": true,
-        "effort": "xhigh"
+        "effort": "high"
       },
       {
         "provider": "copilot_chat",
         "model": "gpt-5.4-mini",
+        "enable_thinking": true,
+        "effort": "high"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "claude-sonnet-4.6",
         "enable_thinking": true,
         "effort": "high"
       }
@@ -46,7 +52,35 @@
     "tool_permissions": {
       "default": "allow"
     },
-    "profiles": {},
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "tools": {
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": false,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "spawn_agent": true,
+          "thinking": true,
+          "update_plan": true,
+          "search_web": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {
+          "mcp-server-context7": {
+            "tools": {
+              "resolve-library-id": true,
+              "query-docs": true
+            }
+          }
+        }
+      }
+    },
     "inline_assistant_model": {
       "provider": "copilot_chat",
       "model": "gpt-5.4-mini"
