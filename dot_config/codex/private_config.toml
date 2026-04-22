@@ -40,7 +40,6 @@ hide_full_access_warning = true
 [features]
 js_repl = true
 prevent_idle_sleep = true
-use_linux_sandbox_bwrap = true
 apps = true
 memories = true
 
