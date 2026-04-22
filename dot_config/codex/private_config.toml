@@ -4,6 +4,7 @@ approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "xhigh"
+approvals_reviewer = "user"
 
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
@@ -26,6 +27,9 @@ trust_level = "trusted"
 [projects."/home/limavfabio/Documents/repos/norte-brasil-digital"]
 trust_level = "trusted"
 
+[projects."/home/limavfabio/Documents/repos/NBDFiscalAPI"]
+trust_level = "trusted"
+
 [notice]
 hide_full_access_warning = true
 
@@ -36,6 +40,7 @@ hide_full_access_warning = true
 [features]
 js_repl = true
 prevent_idle_sleep = true
+use_linux_sandbox_bwrap = true
 apps = true
 memories = true
 
