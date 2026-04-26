@@ -59,5 +59,3 @@ When working within these environments, strictly adhere to the following tools a
   * **Stack:** Expo, React Native Paper.
   * **UX/UI:** Strictly follow Android and Material Design 3 (MD3) conventions for both interaction patterns and visual components.
   * **Philosophy:** Use native stylesheets for styling. Follow standard Expo conventions for project architecture and implementation.
-
-@RTK.md
