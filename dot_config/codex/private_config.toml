@@ -64,3 +64,6 @@ approval_mode = "approve"
 status_line = ["model-with-reasoning", "context-usage", "project-root", "five-hour-limit", "weekly-limit", "fast-mode"]
 notifications = true
 notification_method = "auto"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
