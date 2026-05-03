@@ -38,6 +38,7 @@ js_repl = true
 prevent_idle_sleep = true
 apps = true
 memories = false
+goals = true
 
 [mcp_servers.context7]
 url = "https://mcp.context7.com/mcp"
