@@ -6,6 +6,8 @@ personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
 approvals_reviewer = "user"
 
+suppress_unstable_features_warning = true
+
 [projects."/home/limavfabio/Documents/repos"]
 trust_level = "trusted"
 
