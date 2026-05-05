@@ -17,14 +17,7 @@
     "bindings": {
       "ctrl-shift-d": "editor::SelectAllMatches",
       "ctrl-enter": "editor::NewlineBelow",
-      "ctrl-shift-enter": "editor::NewlineAbove",
-      "ctrl-i": "assistant::InlineAssist"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-i": "assistant::InlineAssist"
+      "ctrl-shift-enter": "editor::NewlineAbove"
     }
   },
   {
@@ -48,8 +41,6 @@
   },
   {
     "context": "AgentPanel",
-    "bindings": {
-      "ctrl-shift-l": "agent::ToggleFocus"
-    }
+    "bindings": {}
   }
 ]

@@ -1,78 +1,26 @@
 {
   "cli_default_open_behavior": "new_window",
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "collaboration_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "git_panel": {
     "tree_view": true,
-    "dock": "right"
+    "dock": "left"
   },
   "agent_servers": {},
   "diff_view_style": "unified",
   "edit_predictions": {
-    "provider": "zed"
+    "enabled": false
   },
-  "context_servers": {
-    "mcp-server-context7": {
-      "enabled": true,
-      "remote": false,
-      "settings": {
-        "context7_api_key": ""
-      }
-    }
-  },
+  "context_servers": {},
   "agent": {
-    "dock": "left",
-    "tool_permissions": {
-      "default": "allow"
-    },
-    "profiles": {
-      "ask": {
-        "name": "Ask",
-        "tools": {
-          "diagnostics": true,
-          "fetch": true,
-          "list_directory": true,
-          "project_notifications": false,
-          "now": true,
-          "find_path": true,
-          "read_file": true,
-          "open": true,
-          "grep": true,
-          "spawn_agent": true,
-          "thinking": true,
-          "update_plan": true,
-          "search_web": true
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {
-          "mcp-server-context7": {
-            "tools": {
-              "resolve-library-id": true,
-              "query-docs": true
-            }
-          }
-        }
-      }
-    },
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5.4-mini"
-    },
-    "default_profile": "write",
-    "default_model": {
-      "effort": "high",
-      "provider": "copilot_chat",
-      "model": "gpt-5.4"
-    },
-    "use_modifier_to_send": false,
-    "play_sound_when_agent_done": "always"
+    "enabled": false
   },
   "restore_on_startup": "last_session",
   "icon_theme": "Colored Zed Icons Theme Dark",
