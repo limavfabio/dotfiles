@@ -28,26 +28,6 @@
     }
   },
   "agent": {
-    "favorite_models": [
-      {
-        "provider": "copilot_chat",
-        "model": "gpt-5.4",
-        "enable_thinking": true,
-        "effort": "high"
-      },
-      {
-        "provider": "copilot_chat",
-        "model": "gpt-5.4-mini",
-        "enable_thinking": true,
-        "effort": "high"
-      },
-      {
-        "provider": "copilot_chat",
-        "model": "claude-sonnet-4.6",
-        "enable_thinking": true,
-        "effort": "high"
-      }
-    ],
     "dock": "left",
     "tool_permissions": {
       "default": "allow"
@@ -110,6 +90,15 @@
   "languages": {
     "Ruby": {
       "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+    },
+    "HTML+ERB": {
+      "language_servers": ["herb", "ruby-lsp"]
+    },
+    "JS+ERB": {
+      "language_servers": ["ruby-lsp"]
+    },
+    "YAML+ERB": {
+      "language_servers": ["ruby-lsp"]
     }
   },
   "lsp": {
@@ -130,21 +119,8 @@
     },
     "tailwindcss-language-server": {
       "settings": {
-        "includeLanguages": {
-          "erb": "html",
-          "ruby": "html"
-        },
         "experimental": {
           "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
-        }
-      }
-    },
-    "vscode-css-language-server": {
-      "settings": {
-        "css": {
-          "lint": {
-            "unknownAtRules": "ignore"
-          }
         }
       }
     }
@@ -164,7 +140,6 @@
     "git-firefly": true,
     "make": true,
     "rainbow-csv": true,
-    "mcp-server-context7": true,
     "sql": true
   }
 }
