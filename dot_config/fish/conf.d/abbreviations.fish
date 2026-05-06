@@ -3,7 +3,8 @@ if status is-interactive
     abbr -a fishconf "$EDITOR ~/.config/fish/config.fish"
     abbr -a venv    'source .venv/bin/activate.fish'
     abbr -a p       'pnpm'
-    abbr -a pi      'pnpm install'
+    # Conflicts with pi.dev cli
+    # abbr -a pi      'pnpm install'
     abbr -a pu      'pnpm update'
     abbr -a be      'bundle exec'
 

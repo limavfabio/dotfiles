@@ -2,5 +2,9 @@
   "lastChangelogVersion": "0.73.0",
   "defaultProvider": "opencode-go",
   "defaultModel": "deepseek-v4-pro",
-  "defaultThinkingLevel": "high"
+  "defaultThinkingLevel": "high",
+  "enabledModels": [
+    "opencode-go/deepseek-v4-flash",
+    "opencode-go/deepseek-v4-pro"
+  ]
 }
