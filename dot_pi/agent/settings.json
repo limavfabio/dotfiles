@@ -6,5 +6,10 @@
   "enabledModels": [
     "opencode-go/deepseek-v4-flash",
     "opencode-go/deepseek-v4-pro"
+  ],
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-lens",
+    "npm:pi-markdown-preview"
   ]
 }
