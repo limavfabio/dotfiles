@@ -166,14 +166,3 @@ export function markCompletedSteps(text: string, items: TodoItem[]): number {
 	}
 	return doneSteps.length;
 }
-
-/**
- * Thinking levels valid in pi.
- */
-export type ThinkingLevel = "off" | "minimal" | "low" | "medium" | "high" | "xhigh";
-
-export const VALID_THINKING_LEVELS: ThinkingLevel[] = ["off", "minimal", "low", "medium", "high", "xhigh"];
-
-export function isValidThinkingLevel(level: string): level is ThinkingLevel {
-	return VALID_THINKING_LEVELS.includes(level as ThinkingLevel);
-}
