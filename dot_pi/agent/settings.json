@@ -5,11 +5,10 @@
   "defaultThinkingLevel": "high",
   "enabledModels": [
     "opencode-go/deepseek-v4-flash",
-    "opencode-go/deepseek-v4-pro"
+    "opencode-go/deepseek-v4-pro",
+    "opencode-go/kimi-k2.6",
+    "opencode-go/minimax-m2.7"
   ],
-  "packages": [
-    "npm:pi-web-access",
-    "npm:pi-lens",
-    "npm:pi-markdown-preview"
-  ]
+  "packages": ["npm:pi-web-access", "npm:pi-lens", "npm:pi-markdown-preview"],
+  "hideThinkingBlock": false
 }
