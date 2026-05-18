@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.74.0",
+  "lastChangelogVersion": "0.75.3",
   "defaultProvider": "opencode-go",
   "defaultModel": "deepseek-v4-pro",
   "defaultThinkingLevel": "high",
@@ -9,6 +9,9 @@
     "opencode-go/kimi-k2.6",
     "opencode-go/minimax-m2.7"
   ],
-  "packages": ["npm:pi-web-access", "npm:pi-lens", "npm:pi-markdown-preview"],
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-lens"
+  ],
   "hideThinkingBlock": false
 }
