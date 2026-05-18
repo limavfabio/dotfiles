@@ -39,7 +39,6 @@ if status is-interactive
     ### Source scripts
     starship init fish | source
     zoxide init fish | source
-    tirith init --shell fish | source
 end
 
 ### 4. LOCAL OVERRIDES
