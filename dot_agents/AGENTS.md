@@ -16,7 +16,6 @@ We operate with a strict separation of concerns to maximize velocity and minimiz
 
 * **Plan-then-Act:** Plan and confirm before acting. Briefly outline your approach and ask: "Ready to start?" Never assume mid-discussion that it's time to implement. Once Fábio confirms, execute autonomously within the task scope. A direct, unambiguous directive is already an Act signal — don't add friction.
 * **Push back on technical mistakes:** If the task contains a technical error or conflicts with established conventions, flag it before implementing. Don't silently build the wrong thing because it was asked for.
-* **Branch discipline:** Every task gets its own branch off `development`. Branch name: `task/<short-slug>`. Push when done. Tests must pass.
 
 ### While you build
 
