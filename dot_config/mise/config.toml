@@ -1,4 +1,7 @@
 [tools]
+deno = "latest"
+elixir = "latest"
+erlang = "latest"
 go = "latest"
 node = "latest"
 ruby = "latest"

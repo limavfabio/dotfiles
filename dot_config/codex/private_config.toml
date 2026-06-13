@@ -44,6 +44,18 @@ trust_level = "trusted"
 [projects."/home/limavfabio/Documents/repos/HubPayPlus"]
 trust_level = "trusted"
 
+[projects."/home/limavfabio/Documents/repos/pelada-go"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/emprego_facil"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/varejo_remix"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/decide-together"]
+trust_level = "trusted"
+
 [notice]
 hide_full_access_warning = true
 hide_rate_limit_model_nudge = true
