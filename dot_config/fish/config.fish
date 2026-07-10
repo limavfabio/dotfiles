@@ -5,7 +5,6 @@ set -g fish_greeting ""
 set -gx TERMINAL alacritty
 set -gx EDITOR nvim
 set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
-set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 set -gx CODEX_HOME "$HOME/.config/codex"
 set -gx ANDROID_HOME "$HOME/Android/Sdk"
 if test -d "$HOME/.local/android-studio/jbr"
@@ -17,8 +16,6 @@ end
 # 'fish_add_path' is smart: it prepends/appends and handles duplicates automatically
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/bin
-fish_add_path $PNPM_HOME/bin
-fish_add_path $PNPM_HOME
 fish_add_path "$HOME/Android/Sdk/platform-tools/" # Recommended for Android dev
 fish_add_path "$HOME/.local/android-studio/bin"
 
