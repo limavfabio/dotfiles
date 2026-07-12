@@ -2,6 +2,7 @@ set -g fish_greeting ""
 
 ### 1. ENVIRONMENT VARIABLES
 # Fish handles these natively; 'set -gx' is the equivalent of 'export'
+set -gx OBSIDIAN_VAULT_PATH "$HOME/ObsidianVault"
 set -gx TERMINAL alacritty
 set -gx EDITOR nvim
 set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
