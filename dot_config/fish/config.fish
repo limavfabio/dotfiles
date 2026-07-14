@@ -2,10 +2,10 @@ set -g fish_greeting ""
 
 ### 1. ENVIRONMENT VARIABLES
 # Fish handles these natively; 'set -gx' is the equivalent of 'export'
+set -gx OBSIDIAN_VAULT_PATH "$HOME/ObsidianVault"
 set -gx TERMINAL alacritty
 set -gx EDITOR nvim
 set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
-set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 set -gx CODEX_HOME "$HOME/.config/codex"
 set -gx ANDROID_HOME "$HOME/Android/Sdk"
 if test -d "$HOME/.local/android-studio/jbr"
@@ -14,13 +14,13 @@ end
 
 
 ### 2. PATH CONSTRUCTION
-# 'fish_add_path' is smart: it prepends/appends and handles duplicates automatically
-fish_add_path $HOME/go/bin
-fish_add_path $HOME/.local/bin
-fish_add_path $PNPM_HOME/bin
-fish_add_path $PNPM_HOME
-fish_add_path "$HOME/Android/Sdk/platform-tools/" # Recommended for Android dev
-fish_add_path "$HOME/.local/android-studio/bin"
+# Keep PATH changes in this file; do not persist them in fish_user_paths.
+# The Android Emulator ships an incompatible qemu-img, so never expose it globally.
+set -gx PATH (string match -v -- "$HOME/Android/Sdk/emulator" $PATH)
+fish_add_path --path $HOME/go/bin
+fish_add_path --path $HOME/.local/bin
+fish_add_path --path "$HOME/Android/Sdk/platform-tools" # Recommended for Android dev
+fish_add_path --path "$HOME/.local/android-studio/bin"
 
 ### 3. INTERACTIVE SESSIONS
 if status is-interactive

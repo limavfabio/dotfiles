@@ -4,45 +4,25 @@ approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
 plan_mode_reasoning_effort = "high"
+model_reasoning_effort = "medium"
+model_context_window = 256000
 approvals_reviewer = "user"
-
-suppress_unstable_features_warning = true
-
-[projects."/home/limavfabio/Documents/repos"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/varejo_rails"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Downloads/Rei do Assado"]
-trust_level = "trusted"
 
 [projects."/home/limavfabio"]
 trust_level = "trusted"
 
-[projects."/home/limavfabio/Documents/repos/emprego-facil"]
+[projects."/home/limavfabio/Documents/repos/pix-remix"]
 trust_level = "trusted"
 
-[projects."/home/limavfabio/Documents/repos/emprego-facil-expo"]
+[projects."/home/limavfabio/Documents/repos/varejo-remix"]
 trust_level = "trusted"
 
-[projects."/home/limavfabio/Documents/repos/norte-brasil-digital"]
-trust_level = "trusted"
+[tui]
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
+status_line_use_colors = true
 
-[projects."/home/limavfabio/Documents/repos/NBDFiscalAPI"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Downloads/video-lily"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Downloads/sonic-pi"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/sonic-ruby"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/HubPayPlus"]
-trust_level = "trusted"
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 2
 
 [projects."/home/limavfabio/Documents/repos/my-react-router-app"]
 trust_level = "trusted"
@@ -66,37 +46,5 @@ trust_level = "trusted"
 hide_full_access_warning = true
 hide_rate_limit_model_nudge = true
 
-[features]
-js_repl = true
-prevent_idle_sleep = true
-apps = true
-memories = false
-goals = true
-
-[mcp_servers.context7]
-url = "https://mcp.context7.com/mcp"
-env_http_headers = { "CONTEXT7_API_KEY" = "CONTEXT7_API_KEY" }
-
-[mcp_servers.chrome-devtools]
-command = "npx"
-args = ["-y", "chrome-devtools-mcp@latest", "--autoConnect"]
-
-[mcp_servers.chrome-devtools.tools.new_page]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.take_snapshot]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.click]
-approval_mode = "approve"
-
-[mcp_servers.chrome-devtools.tools.evaluate_script]
-approval_mode = "approve"
-
-[tui]
-status_line = ["model-with-reasoning", "context-usage", "project-root", "five-hour-limit", "weekly-limit", "fast-mode"]
-notifications = true
-notification_method = "auto"
-
-[tui.model_availability_nux]
-"gpt-5.5" = 4
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
