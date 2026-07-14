@@ -1,5 +1,5 @@
-model = "gpt-5.5"
-model_reasoning_effort = "low"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
@@ -42,6 +42,24 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/home/limavfabio/Documents/repos/HubPayPlus"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/my-react-router-app"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/decide-together"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/nbd-vendor-portal"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/varejo-remix"]
+trust_level = "trusted"
+
+[projects."/tmp/my-remix-app"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/leptos-experiment"]
 trust_level = "trusted"
 
 [notice]
