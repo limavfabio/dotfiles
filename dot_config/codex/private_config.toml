@@ -20,6 +20,24 @@ status_line_use_colors = true
 [tui.model_availability_nux]
 "gpt-5.6-sol" = 2
 
+[projects."/home/limavfabio/Documents/repos/my-react-router-app"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/decide-together"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/nbd-vendor-portal"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/varejo-remix"]
+trust_level = "trusted"
+
+[projects."/tmp/my-remix-app"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/leptos-experiment"]
+trust_level = "trusted"
+
 [notice]
 hide_full_access_warning = true
 hide_rate_limit_model_nudge = true
