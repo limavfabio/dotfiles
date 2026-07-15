@@ -7,39 +7,12 @@ plan_mode_reasoning_effort = "high"
 model_context_window = 256000
 approvals_reviewer = "user"
 
-[projects."/home/limavfabio"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/pix-remix"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/varejo-remix"]
-trust_level = "trusted"
-
 [tui]
 status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
 status_line_use_colors = true
 
 [tui.model_availability_nux]
 "gpt-5.6-sol" = 2
-
-[projects."/home/limavfabio/Documents/repos/my-react-router-app"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/decide-together"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/nbd-vendor-portal"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/varejo-remix"]
-trust_level = "trusted"
-
-[projects."/tmp/my-remix-app"]
-trust_level = "trusted"
-
-[projects."/home/limavfabio/Documents/repos/leptos-experiment"]
-trust_level = "trusted"
 
 [notice]
 hide_full_access_warning = true
