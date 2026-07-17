@@ -5,7 +5,7 @@ model_context_window = 256000
 approvals_reviewer = "user"
 
 [tui]
-status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
+status_line = ["model-with-reasoning", "current-dir", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
 status_line_use_colors = true
 
 [tui.model_availability_nux]
