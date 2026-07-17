@@ -1,7 +1,5 @@
 [tools]
 deno = "latest"
-elixir = "latest"
-erlang = "latest"
 go = "latest"
 ruby = "latest"
 usage = "latest"
