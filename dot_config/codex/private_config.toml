@@ -1,15 +1,15 @@
 model = "gpt-5.6-sol"
 plan_mode_reasoning_effort = "high"
 model_reasoning_effort = "low"
-model_context_window = 256000
 approvals_reviewer = "user"
+service_tier = "fast"
 
 [tui]
 status_line = ["model-with-reasoning", "current-dir", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
 status_line_use_colors = true
 
 [tui.model_availability_nux]
-"gpt-5.6-sol" = 2
+"gpt-5.6-sol" = 4
 
 [notice]
 hide_full_access_warning = true
@@ -17,3 +17,15 @@ hide_rate_limit_model_nudge = true
 
 [mcp_servers.openaiDeveloperDocs]
 url = "https://developers.openai.com/mcp"
+
+[projects."/home/limavfabio/Documents/repos"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/varejo-remix"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/Norte-Brasil-Digital---Landing-Page"]
+trust_level = "trusted"
+
+[projects."/home/limavfabio/Documents/repos/NBDFiscalAPI"]
+trust_level = "trusted"
