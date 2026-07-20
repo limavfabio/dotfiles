@@ -4,7 +4,7 @@ model_reasoning_effort = "medium"
 approvals_reviewer = "user"
 
 [tui]
-status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
+status_line = ["model-with-reasoning", "current-dir", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
 status_line_use_colors = true
 
 [notice]
