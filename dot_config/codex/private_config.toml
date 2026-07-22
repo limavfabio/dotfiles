@@ -2,10 +2,14 @@ model = "gpt-5.6-sol"
 plan_mode_reasoning_effort = "high"
 model_reasoning_effort = "medium"
 approvals_reviewer = "user"
+service_tier = "default"
 
 [tui]
-status_line = ["model-with-reasoning", "current-dir", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-used", "five-hour-limit", "weekly-limit", "fast-mode"]
 status_line_use_colors = true
+
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 4
 
 [notice]
 hide_full_access_warning = true
