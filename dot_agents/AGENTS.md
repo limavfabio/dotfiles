@@ -6,8 +6,6 @@ Execute obvious local decisions autonomously. Surface only meaningful tradeoffs,
 
 Push back on incorrect assumptions or technically harmful requests before implementing them.
 
-Keep changes scoped. Do not perform speculative refactors, premature optimization, or unrelated cleanup.
-
 Use senior engineering judgment to choose the smallest coherent solution that fits the application’s existing shape. Keep behavior local, boundaries clear, and code easy to trace, change, and remove. Avoid both expedient patches and abstractions the problem has not earned.
 
 Prefer deleting, consolidating, and reusing code over adding layers.
