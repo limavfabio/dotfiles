@@ -7,10 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_buffer_font_size": 13.0,
+  "agent_ui_font_size": 16.0,
+  "buffer_font_weight": 400.0,
+  "buffer_font_family": "JetBrains Mono",
+  "terminal": {
+    "font_weight": 300.0,
+    "font_family": ".ZedMono"
+  },
   "icon_theme": "Colored Zed Icons Theme Light",
   "diff_view_style": "unified",
   "cli_default_open_behavior": "new_window",
   "agent": {
+    "tool_permissions": {
+      "default": "allow"
+    },
     "default_model": {
       "provider": "openai-subscribed",
       "model": "gpt-5.6-sol",
@@ -32,7 +43,7 @@
     }
   },
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_size": 16.0,
   "theme": {
     "mode": "system",
     "light": "One Light",
