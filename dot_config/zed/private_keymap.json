@@ -2,7 +2,6 @@
   {
     "bindings": {
       "ctrl-p": "file_finder::Toggle",
-      "ctrl-?": null,
       "ctrl-shift-l": "workspace::ToggleRightDock"
     }
   },
@@ -27,7 +26,7 @@
     }
   },
   {
-    "context": "(Editor && edit_prediction_conflict)",
+    "context": "(Editor && (edit_prediction && (showing_completions || in_leading_whitespace)))",
     "bindings": {
       "alt-a": "editor::AcceptEditPrediction"
     }
