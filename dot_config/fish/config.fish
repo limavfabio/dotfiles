@@ -45,3 +45,6 @@ end
 if test -f ~/.config/fish/config.local.fish
     source ~/.config/fish/config.local.fish
 end
+
+# fabro
+fish_add_path $HOME/.fabro/bin
