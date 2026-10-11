@@ -19,6 +19,7 @@
   "diff_view_style": "unified",
   "cli_default_open_behavior": "new_window",
   "agent": {
+    "default_profile": "write",
     "tool_permissions": {
       "default": "allow"
     },
@@ -26,7 +27,7 @@
       "provider": "openai-subscribed",
       "model": "gpt-5.6-sol",
       "enable_thinking": true,
-      "effort": "medium"
+      "effort": "high"
     },
     "play_sound_when_agent_done": "when_hidden",
     "favorite_models": [
@@ -34,7 +35,7 @@
         "provider": "openai-subscribed",
         "model": "gpt-5.6-sol",
         "enable_thinking": true,
-        "effort": "medium"
+        "effort": "high"
       }
     ],
     "model_parameters": [],
