@@ -16,10 +16,10 @@ end
 ### 2. PATH CONSTRUCTION
 # Keep PATH changes in this file; do not persist them in fish_user_paths.
 # The Android Emulator ships an incompatible qemu-img, so never expose it globally.
-set -gx PATH (string match -v -- "$HOME/Android/Sdk/emulator" $PATH)
+# set -gx PATH (string match -v -- "$HOME/Android/Sdk/emulator" $PATH)
 fish_add_path --path $HOME/go/bin
 fish_add_path --path $HOME/.local/bin
-fish_add_path --path "$HOME/Android/Sdk/platform-tools" # Recommended for Android dev
+# fish_add_path --path "$HOME/Android/Sdk/platform-tools" # Recommended for Android dev
 fish_add_path --path "$HOME/.local/android-studio/bin"
 
 ### 3. INTERACTIVE SESSIONS
